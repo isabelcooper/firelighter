@@ -6,7 +6,7 @@ import {expect} from "chai";
 
 describe('Server', () => {
   const httpClient = HttpClient;
-  const port = 1010;
+  const port = 1111;
   let server: Server;
 
   beforeEach(async () => {
