@@ -3,6 +3,7 @@
 - [x] http reqs 
 - [x] ci
 - [x] hosting
+fix appengine loading bug
 - [ ] https
 - [ ] database 
 
