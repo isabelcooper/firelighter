@@ -19,13 +19,19 @@ case "${run_arg}" in
     ;;
 "test")
     npm i
-    sudo npm install -g typescript
     tsc
     npm run test
     ;;
 "start")
     npm run start
     ;;
-*)
+"ci")
+    npm i
+    sudo npm install -g typescript
+    tsc
+    npm run test
+    ./deploy.sh
+    ;;
+ *)
     echo "Unexpected argument given:" $1
 esac

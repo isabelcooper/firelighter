@@ -1,3 +1,6 @@
+import {Server} from "./src/server";
+
 (async () => {
-  console.log('index.ts running')
+  const server = new Server();
+  server.start();
 })();
