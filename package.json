@@ -1,5 +1,5 @@
 {
-  "name": "codestory",
+  "name": "firelighter",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/isabelcooper/codeStory.git"
+    "url": "git+https://github.com/isabelcooper/firelighter.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/isabelcooper/codeStory/issues"
+    "url": "https://github.com/isabelcooper/firelighter/issues"
   },
-  "homepage": "https://github.com/isabelcooper/codeStory#readme",
+  "homepage": "https://github.com/isabelcooper/firelighter#readme",
   "dependencies": {
     "http4js": "^4.2.7",
     "node": "^13.5.0",
