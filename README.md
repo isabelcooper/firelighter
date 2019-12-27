@@ -26,6 +26,8 @@
 - create a project 
 - add PROJECT_NAME to deploy script 
 - add AppEngine app - this creates a service account automatically
+- on cmd line: `gcloud config set project firelighter` then `gcloud app deploy`
+
 - [generate GCLOUD_SERVICE_KEY](https://console.cloud.google.com/iam-admin/serviceaccounts?authuser=1&project=firelighter) 
 - download service key and swap in file name in deploy script
 - Add Env vars to circleCi for: 
