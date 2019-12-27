@@ -41,3 +41,4 @@ GCLOUD_SERVICE_KEY, GOOGLE_PROJECT_ID, GOOGLE_COMPUTE_ZONE, PROJECT_NAME
     (NB can check env vars are set properly with `echo $GOOGLE_PROJECT_ID`)
 Google sdk auth help here](https://circleci.com/docs/2.0/google-auth/)
 - push to Git: should now pass build
+- app health should return 200 on https://firelighter.appspot.com/

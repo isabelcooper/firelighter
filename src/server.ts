@@ -15,9 +15,9 @@ export class Server {
   start() {
     try{
       this.server.start();
-      console.log(`Server running on port ${this.port}`)
+      // console.log(`Server running on port ${this.port}`)
     } catch (e) {
-      console.log(e)
+      // console.log(e)
     }
   }
 
