@@ -21,6 +21,7 @@
     "http4js": "^4.2.7",
     "node": "^13.5.0",
     "ts-node": "^8.4.1",
+    "@types/node": "^12.7.5",
     "typescript": "^3.6.3"
   },
   "devDependencies": {
@@ -28,7 +29,6 @@
     "mocha": "^6.2.0",
     "@types/chai": "^4.2.3",
     "@types/mocha": "^5.2.7",
-    "@types/node": "^12.7.5",
     "ts-node-dev": "^1.0.0-pre.43"
   }
 }
