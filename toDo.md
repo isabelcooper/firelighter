@@ -4,6 +4,7 @@
 - [x] ci
 - [x] hosting
 - [ ] https
+- [ ] database 
 
 ## ToDo Makers Exam
 - [ ] doc framework
