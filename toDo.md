@@ -1,7 +1,7 @@
 ## ToDo General
 - [x] testing, setup 
 - [x] http reqs 
-- [ ] ci
+- [x] ci
 - [ ] hosting
 
 ## ToDo Makers Exam
