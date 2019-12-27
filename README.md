@@ -12,6 +12,7 @@
 ### Instructions: 
 #### Basic
 - Clone project to new repo
+- change project name in package.json
 - ./run version_check. Update to latest version on node if necessary (`nvm install 13.5.0` and `nvm use 13.5.0`). 
 - ./run test to install dependencies and run sample test. Should pass.
 - ./run start should start the server (via index.ts).

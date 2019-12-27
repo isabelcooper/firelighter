@@ -13,8 +13,12 @@ export class Server {
   }
 
   start() {
-    this.server.start();
-    console.log(`Server running on port ${this.port}`)
+    try{
+      this.server.start();
+      console.log(`Server running on port ${this.port}`)
+    } catch (e) {
+      console.log(e)
+    }
   }
 
   stop() {
