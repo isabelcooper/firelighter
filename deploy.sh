@@ -16,8 +16,8 @@ if [[ ! $(command -v gcloud) ]]; then
     sudo cp -R google-cloud-sdk/* /usr/local
 fi
 
-echo ${GCLOUD_SERVICE_KEY} | base64 --decode > ${HOME}/gcloud-service-key.json
-gcloud auth activate-service-account --key-file=${HOME}/gcloud-service-key.json
+echo ${GCLOUD_SERVICE_KEY} | base64 --decode > ${HOME}/firelighter-a9cf2a05d349.json
+gcloud auth activate-service-account --key-file=${HOME}/firelighter-a9cf2a05d349.json
 gcloud --quiet config set project ${GOOGLE_PROJECT_ID}
 gcloud --quiet config set compute/zone ${GOOGLE_COMPUTE_ZONE}
 gcloud auth list
