@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+set -o errexit
+
+NODE_VERSION='13.5.0'
+
+version_check () {
+    if [[ $(node -v) != "v${NODE_VERSION}" ]]; then  return 1; else return 0; fi
+}
+
+run_arg="${1:-test}"
+case "${run_arg}" in
+"version_check")
+    if ! version_check; then
+        echo "Upgrade to version ${NODE_VERSION} of node to operate"
+        exit 1;
+    else echo "Already running version ${NODE_VERSION}"
+        exit;
+    fi
+    ;;
+"test")
+    npm i
+    sudo npm install -g typescript
+    tsc
+    npm run test
+    ;;
+"start")
+    npm run start
+    ;;
+*)
+    echo "Unexpected argument given:" $1
+esac
