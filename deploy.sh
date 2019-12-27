@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
-GCLOUD_SERVICE_KEY=
-GOOGLE_PROJECT_ID=
-GOOGLE_COMPUTE_ZONE=
-PROJECT_NAME=
+PROJECT_NAME=firelighter
 
 set -e
 
