@@ -7,7 +7,7 @@
 - http4js (http framework)
 - mocha, chai (testing frameworks)
 - circle (ci) & google sdk auth
-- GCP
+- GCP AppEngine
 
 ### Instructions: 
 #### Basic
@@ -24,13 +24,10 @@
 #### GCP
 - create a project 
 - add PROJECT_NAME to deploy script 
-- Add Env vars to circleCi
-    ```
-    GOOGLE
-    GOOGLE_PROJECT_ID=
-    GOOGLE_COMPUTE_ZONE=
-    PROJECT_NAME=
-    ```
+- add AppEngine app - this creates a service account automatically
+- [generate GCLOUD_SERVICE_KEY](https://console.cloud.google.com/iam-admin/serviceaccounts?authuser=1&project=firelighter) 
+- Add Env vars to circleCi for: 
+GCLOUD_SERVICE_KEY, GOOGLE_PROJECT_ID, GOOGLE_COMPUTE_ZONE, PROJECT_NAME
 - add google vars locally via command line: 
     ```
     gcloud config set project firelighter
