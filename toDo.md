@@ -2,7 +2,7 @@
 - [x] testing, setup 
 - [x] http reqs 
 - [x] ci
-- [ ] hosting
+- [x] hosting
 
 ## ToDo Makers Exam
 - [ ] doc framework
