@@ -8,7 +8,7 @@ export class Server {
 
   constructor(private port: number = 1010) {
     this.server = routes(Method.GET, '/health', async() => {
-      console.log('IN HEALTH ENDPOINT');
+      // console.log('IN HEALTH ENDPOINT');
       return ResOf(200)
     })
       .asServer(new NativeHttpServer(this.port));
@@ -20,7 +20,7 @@ export class Server {
       } catch (e) {
         console.log(e)
       }
-      console.log(`Server running on port ${this.port}`)
+      // console.log(`Server running on port ${this.port}`)
   }
 
   stop() {
