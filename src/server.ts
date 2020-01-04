@@ -11,7 +11,8 @@ export class Server {
       console.log('************IN HEALTH ENDPOINT');
       return ResOf(200)
     })
-      .asServer(new NativeHttpServer(this.port));
+      .withGet('/test', async () => ResOf(200))
+      .asServer(new NativeHttpServer(parseInt(process.env.PORT!) || this.port));
   }
 
   start() {
