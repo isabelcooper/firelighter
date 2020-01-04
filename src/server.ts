@@ -8,10 +8,8 @@ export class Server {
 
   constructor(private port: number = 1010) {
     this.server = routes(Method.GET, '/health', async() => {
-      console.log('************IN HEALTH ENDPOINT');
       return ResOf(200)
     })
-      .withGet('/test', async () => ResOf(200))
       .asServer(new NativeHttpServer(parseInt(process.env.PORT!) || this.port));
   }
 
