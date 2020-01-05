@@ -9,7 +9,6 @@ export class EventHandler implements Handler {
   public async handle(req: Req): Promise<Res> {
     const body = JSON.parse(req.bodyString());
     const event = body.event ||'error';
-    console.log('event to store', event);
     await this.eventStore.store(event);
     return ResOf(200);
   }
