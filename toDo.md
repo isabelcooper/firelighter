@@ -3,9 +3,9 @@
 - [x] http reqs 
 - [x] ci
 - [x] hosting
-fix appengine loading bug
-- [ ] https
+- [x] https
 - [ ] database 
+- [ ] add random
 
 ## ToDo Makers Exam
 - [ ] doc framework

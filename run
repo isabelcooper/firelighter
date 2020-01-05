@@ -47,7 +47,8 @@ case "${run_arg}" in
 "test")
     if ! version_check; then install_node; fi
     install_node_dependencies
-    npm run test
+    npm run test:unit
+    npm run test:integration
     ;;
 "start")
     if ! version_check; then install_node; fi
@@ -58,7 +59,7 @@ case "${run_arg}" in
     npm i
     sudo npm install -g typescript
     tsc
-    npm run test
+    npm run test:unit
     ./deploy.sh
     ;;
  *)

@@ -51,4 +51,10 @@ Storage Object Admin
 - enable app engine admin api https://console.developers.google.com/apis/library/appengine.googleapis.com?project=firelighter&authuser=1
 
 - push to Git: should now pass build
-- app health should return 200 on https://firelighter.appspot.com/
+- app health should return 200 on https://firelighter.appspot.com/health
+
+
+### Database
+- [create DB using CloudSql > PostgresQL](https://console.cloud.google.com/sql/choose-instance-engine?authuser=1&project=firelighter)
+- add correct config to prod.ts 
+- add POSTGRES_PASSWORD to .env and circleCi, app.yaml, app.yaml.template
