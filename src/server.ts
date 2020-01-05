@@ -2,7 +2,7 @@ import {routes, Routing} from "http4js/core/Routing";
 import {Method} from "http4js/core/Methods";
 import {NativeHttpServer} from "http4js/servers/NativeHttpServer";
 import {ResOf} from "http4js/core/Res";
-import {EventHandler} from "./eventHandler";
+import {EventHandler} from "./EventHandler";
 
 export class Server {
   private server: Routing;
