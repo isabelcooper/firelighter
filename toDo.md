@@ -5,7 +5,7 @@
 - [x] hosting
 - [x] https
 - [ ] database 
-- [ ] add random
+- [x] add random
 
 ## ToDo Makers Exam
 - [ ] doc framework
