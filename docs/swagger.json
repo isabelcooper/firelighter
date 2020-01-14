@@ -1,0 +1,75 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Firelighter"
+  },
+  "host": "localhost:1010",
+  "basePath": "/",
+  "schemes": [
+    "https",
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/event": {
+      "post": {
+        "tags": [
+          "event"
+        ],
+        "summary": "Store a new event",
+        "description": "some more description",
+        "operationId": "addEvent",
+        "consumes": [
+          "application/json",
+          "application/xml"
+        ],
+        "produces": [
+          "application/xml",
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Event object that needs to be added to the store",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Event"
+            }
+          }
+        ],
+        "responses": {
+          "405": {
+            "description": "Invalid input"
+          },
+          "200": {
+            "description": "Event stored successfully"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Event": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "name": {
+          "type": "string"
+        }
+      },
+      "xml": {
+        "name": "Event"
+      }
+    }
+  }
+}

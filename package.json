@@ -27,6 +27,8 @@
     "http4js": "5.0.2",
     "pg": "7.12.1",
     "postgrator": "^3.11.0",
+    "swagger": "^0.7.5",
+    "swagger-ui": "^3.24.3",
     "ts-node": "^8.5.4",
     "typescript": "^3.7.4"
   },
@@ -36,6 +38,7 @@
     "@types/chai": "^4.2.3",
     "@types/mocha": "^5.2.7",
     "ts-node-dev": "^1.0.0-pre.43",
-    "testcontainers": "^2.2.0"
+    "testcontainers": "^2.2.0",
+    "@types/swagger-schema-official": "^2.0.20"
   }
 }
