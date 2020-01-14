@@ -5,7 +5,6 @@ export class PostgresDatabase {
 
   async query(sqlStatement: string) {
     const client = await this.pool.connect();
-    console.log('connected')
     const result = await client.query(sqlStatement);
     await client.release();
     return result

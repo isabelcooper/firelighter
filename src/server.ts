@@ -19,7 +19,7 @@ export class Server {
       try{
         this.server.start();
       } catch (e) {
-        console.log("**caught error on server start logging here: ", e)
+        console.log("Error on server start:", e)
       }
       console.log(`Server running on port ${this.port}`)
   }

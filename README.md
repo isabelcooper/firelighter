@@ -58,4 +58,8 @@ Storage Object Admin
 - [create DB using CloudSql > PostgresQL](https://console.cloud.google.com/sql/choose-instance-engine?authuser=1&project=firelighter)
 - add correct config to prod.ts 
 - add POSTGRES_PASSWORD to .env and circleCi, app.yaml, app.yaml.template
-- connect to cloudShell in console to problemshoot
+- check migrations paths (PostgresMigrator and index.ts)
+- run bootstrap manually into cloudshell > console
+
+
+// run start could use real db, but not running migs. check connect details 

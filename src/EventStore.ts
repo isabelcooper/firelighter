@@ -22,7 +22,6 @@ export class SqlEventStore implements EventStore {
   }
 
   async store(event: string): Promise<any> {
-    console.log('selected database',this.database);
     let sqlStatement = `INSERT INTO events (name) VALUES ('${event}') ON CONFLICT DO NOTHING RETURNING *;`;
     const rows = (await this.database.query(sqlStatement)).rows;
     return {inserted: !!rows.length}

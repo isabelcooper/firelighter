@@ -6,7 +6,8 @@
   "scripts": {
     "test:integration": "mocha **/*.test.int.ts --require ts-node/register",
     "test:unit": "mocha '**/*.test.ts' --require ts-node/register",
-    "start": "ts-node ./index.ts"
+    "start": "ts-node ./index.ts",
+    "start:local": "ts-node ./index-local.ts"
   },
   "repository": {
     "type": "git",
